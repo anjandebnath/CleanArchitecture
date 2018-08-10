@@ -11,7 +11,7 @@ import dagger.Component;
  * Created by Anjan Debnath on 8/9/2018.
  * Copyright (c) 2018, W3 Engineers Ltd. All rights reserved.
  */
-@PerActivity
+@PerActivity  // it provides local Singleton for all activity.
 @Component(dependencies = ApplicationComponent.class,modules = ActivityModule.class)
 public interface ActivityComponent {
 

@@ -2,9 +2,12 @@ package com.anjan.cleanarchitecture.presentation.injection.modules;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v7.app.AppCompatActivity;
 
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ActivityContext;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.PerActivity;
+import com.anjan.cleanarchitecture.presentation.ui.main.MainMvpView;
+import com.anjan.cleanarchitecture.presentation.ui.main.MainPresenter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -16,22 +19,27 @@ import dagger.Provides;
 @Module
 public class ActivityModule {
 
-    private Activity activity;
+    private AppCompatActivity activity;
 
-    public ActivityModule(Activity activity) {
+    public ActivityModule(AppCompatActivity activity) {
         this.activity = activity;
     }
 
     @Provides
-    @PerActivity
-    Activity provideActivity(){
+    @PerActivity // its a local Singleton
+    AppCompatActivity provideActivity(){
         return activity;
     }
 
     @Provides
-    @ActivityContext
+    @ActivityContext // its a local Singleton
     Context provideActivityContext(){
         return activity;
     }
+
+
+
+
+
 
 }

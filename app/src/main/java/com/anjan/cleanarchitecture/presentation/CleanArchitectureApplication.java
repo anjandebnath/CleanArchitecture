@@ -18,12 +18,18 @@ public class CleanArchitectureApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        mApplicationComponent = DaggerApplicationComponent.builder()
-                .applicationModule(new ApplicationModule(this))
-                .build();
-
+        mApplicationComponent = buildApplicationComponent();
+        //this CleanArchitectureApplication class consist all provided objects via component
         mApplicationComponent.inject(this);
 
+    }
+
+    public ApplicationComponent buildApplicationComponent(){
+        //Here all the module class should be initialized
+        // to build the whole dependency graph.
+        return DaggerApplicationComponent.builder()
+                .applicationModule(new ApplicationModule(this))
+                .build();
     }
 
     public ApplicationComponent getApplicationComponent() {

@@ -25,12 +25,12 @@ import dagger.Component;
 @Component(modules = {ApplicationModule.class})
 public interface ApplicationComponent {
 
-
-    //dependent classes that wants to communicate with modules
-    void inject(CleanArchitectureApplication app);
-
+    //we explicitly declare objects available for child components (ActivityComponent here)
     Application application();
 
     @ApplicationContext
     Context context();
+
+     //dependent classes that wants to communicate with modules
+     void inject(CleanArchitectureApplication app);
 }
