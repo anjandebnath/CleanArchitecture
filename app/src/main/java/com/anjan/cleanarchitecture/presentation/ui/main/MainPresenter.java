@@ -15,7 +15,8 @@ public class MainPresenter extends BasePresenter<MainMvpView> {
 
 
     /**
-     * Constructor injection
+     * Constructor injection Simply
+     * Dagger2 supports this constructor injection
      */
     @Inject
     public MainPresenter() {
