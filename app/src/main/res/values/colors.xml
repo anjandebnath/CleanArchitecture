@@ -3,4 +3,12 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="cardViewBg">#3f94c8</color>
+    <color name="recViewBg">#cee5f4</color>
+    <color name="textViewBg">#232d6e</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <drawable name="touchFeedback">#CFD8DC</drawable>
+
 </resources>

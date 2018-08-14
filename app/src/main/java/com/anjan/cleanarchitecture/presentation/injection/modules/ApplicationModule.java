@@ -3,6 +3,7 @@ package com.anjan.cleanarchitecture.presentation.injection.modules;
 import android.app.Application;
 import android.content.Context;
 
+import com.anjan.cleanarchitecture.data.repository.DataRepository;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ApplicationContext;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.DatabaseInfo;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.PreferenceInfo;
@@ -49,4 +50,6 @@ public class ApplicationModule {
     String providePreferenceName(){
         return AppConstants.PREF_NAME;
     }
+
+
 }

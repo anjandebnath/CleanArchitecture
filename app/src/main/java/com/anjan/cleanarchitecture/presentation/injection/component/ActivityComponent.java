@@ -2,6 +2,7 @@ package com.anjan.cleanarchitecture.presentation.injection.component;
 
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.PerActivity;
 import com.anjan.cleanarchitecture.presentation.injection.modules.ActivityModule;
+import com.anjan.cleanarchitecture.presentation.ui.coupons_list.CouponsListActivity;
 import com.anjan.cleanarchitecture.presentation.ui.main.MainActivity;
 
 
@@ -17,4 +18,6 @@ public interface ActivityComponent {
 
      //dependent classes that wants to communicate with modules
      void inject(MainActivity mainActivity);
+
+     void inject(CouponsListActivity userListActivity);
 }
