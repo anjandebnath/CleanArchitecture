@@ -37,3 +37,13 @@ Below you can see some features of the scope annotations:
 Let’s denote Component dependencies traits right away:
    
 - Two dependent components cannot have the same Scope. 
+
+## Clean Architecture
+This project has divided into 2 different layer
+- presentation
+- data
+
+Currently we don't focus on *domain* layer.
+
+### UML Diagram
+![presentation](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML1.PNG) layer
