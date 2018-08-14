@@ -47,8 +47,8 @@ Currently we don't focus on *domain* layer.
 
 ## UML Diagram
 
-### Presentation Layer
+### Data Layer
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML1.PNG)
 
-### Data Layer
+### Presentation Layer
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML_2.PNG)
