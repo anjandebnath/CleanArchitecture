@@ -45,5 +45,10 @@ This project has divided into 2 different layer
 
 Currently we don't focus on *domain* layer.
 
-### UML Diagram
-![presentation](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML1.PNG) layer
+## UML Diagram
+
+### Presentation Layer
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML1.PNG)
+
+### Data Layer
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML_2.PNG)
