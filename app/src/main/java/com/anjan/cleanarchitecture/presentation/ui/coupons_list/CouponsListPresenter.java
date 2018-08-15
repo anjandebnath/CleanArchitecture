@@ -5,6 +5,7 @@ import android.content.Context;
 import com.anjan.cleanarchitecture.data.repository.DataRepository;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ApplicationContext;
 import com.anjan.cleanarchitecture.presentation.model.StoreCoupons;
+import com.anjan.cleanarchitecture.presentation.repository.data_source.StoreCouponDataSource;
 import com.anjan.cleanarchitecture.presentation.ui.base.BasePresenter;
 
 import javax.inject.Inject;
@@ -19,10 +20,10 @@ import io.reactivex.schedulers.Schedulers;
  */
 public class CouponsListPresenter extends BasePresenter<CouponsListMvpView> {
 
-    DataRepository dataRepository;
+    StoreCouponDataSource dataRepository;
 
     @Inject
-    public CouponsListPresenter(@ApplicationContext Context context, DataRepository repository) {
+    public CouponsListPresenter(@ApplicationContext Context context, StoreCouponDataSource repository) {
         dataRepository = repository;
     }
 
