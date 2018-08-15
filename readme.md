@@ -85,3 +85,8 @@ Currently we don't focus on *domain* layer.
 
 ### Presentation Layer
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML_2.PNG)
+
+
+*Thanks*
+
+*Anjan Debnath*
