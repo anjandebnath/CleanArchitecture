@@ -1,4 +1,4 @@
-## Base elements(annotation) of Dagger2
+# Base elements(annotation) of Dagger2
 
 This [link1](https://android.jlelse.eu/dagger-2-part-i-basic-principles-graph-dependencies-scopes-3dfd032ccd82) and [link2](https://proandroiddev.com/dagger-2-part-ii-custom-scopes-component-dependencies-subcomponents-697c1fa1cfc)is best example for understanding Dagger2 
 
@@ -47,7 +47,17 @@ Let’s denote Component dependencies traits right away:
    
 - Two dependent components cannot have the same Scope. 
 
-## Clean Architecture
+
+# How to inject Dependencies of a particular class (Common Practice)
+
+- Create an interface with base methods
+
+- Then Create a class that will be injected dependency and implement the interface. The constructor injection is 
+applied here by `@Inject` annotation on constructor.
+
+- Now Create a Class with `@Module` annotation and create a method with `@Provides`
+
+# Clean Architecture
 This project has divided into 2 different layer
 - presentation
 - data
