@@ -7,7 +7,7 @@ So After exploring lot of projects I have finally managed to overcome my confusi
 
 # Base elements(annotation) of Dagger2
 
-This [link1](https://android.jlelse.eu/dagger-2-part-i-basic-principles-graph-dependencies-scopes-3dfd032ccd82) and [link2](https://proandroiddev.com/dagger-2-part-ii-custom-scopes-component-dependencies-subcomponents-697c1fa1cfc)is best example for understanding Dagger2 
+This [link1](https://android.jlelse.eu/dagger-2-part-i-basic-principles-graph-dependencies-scopes-3dfd032ccd82) and [link2](https://proandroiddev.com/dagger-2-part-ii-custom-scopes-component-dependencies-subcomponents-697c1fa1cfc) are the best example for understanding Dagger2 
 
 Base elements (annotations) of Dagger 2
 
