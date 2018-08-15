@@ -13,8 +13,10 @@ Base elements (annotations) of Dagger 2
 **@Component** — bridge between @Inject and @Module
 
 **@Scope** — enables to create global and local singletons
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_5.PNG)
 
 **@Qualifier** — if different objects of the same type are necessary
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_6.PNG)
 
 
 
