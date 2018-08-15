@@ -38,6 +38,7 @@ Below you can see some features of the scope annotations:
 - Usually the scope annotations are set for the Component and provide method.
 
 - **If at least one provide method has a scope annotation the Component should have the same scope annotation.**
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_3.PNG)
 
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_4.PNG)
@@ -58,18 +59,27 @@ Let’s denote Component dependencies traits right away:
 # How to inject Dependencies of a particular class (Common Practice)
 
 - *Create an interface with base methods*
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag11.PNG)
 
 - *Then Create a class that will be injected dependency and implement the interface. The constructor injection is 
 applied here by `@Inject` annotation on constructor.*
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag12.PNG)
 
 
 - *Now Create a Class with `@Module` annotation and create a method with `@Provides`*
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag13.PNG)
 
 - *Now use `Method Injection` to get the object of the injected class.*
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag14.PNG)
+
+
+## Diagram of how dependency injection work on this MVP architecture
+
+![]()
 
 # Clean Architecture
 This project has divided into 2 different layer
@@ -81,9 +91,11 @@ Currently we don't focus on *domain* layer.
 ## UML Diagram
 
 ### Data Layer
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML1.PNG)
 
 ### Presentation Layer
+
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/UML_2.PNG)
 
 
