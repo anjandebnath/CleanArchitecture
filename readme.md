@@ -61,6 +61,9 @@ applied here by `@Inject` annotation on constructor.*
 - *Now Create a Class with `@Module` annotation and create a method with `@Provides`*
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag13.PNG)
 
+- *Now use `Method Injection` to get the object of the injected class.*
+![]()
+
 # Clean Architecture
 This project has divided into 2 different layer
 - presentation
