@@ -50,12 +50,16 @@ Let’s denote Component dependencies traits right away:
 
 # How to inject Dependencies of a particular class (Common Practice)
 
-- Create an interface with base methods
+- *Create an interface with base methods*
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag11.PNG)
 
-- Then Create a class that will be injected dependency and implement the interface. The constructor injection is 
-applied here by `@Inject` annotation on constructor.
+- *Then Create a class that will be injected dependency and implement the interface. The constructor injection is 
+applied here by `@Inject` annotation on constructor.*
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag12.PNG)
 
-- Now Create a Class with `@Module` annotation and create a method with `@Provides`
+
+- *Now Create a Class with `@Module` annotation and create a method with `@Provides`*
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag13.PNG)
 
 # Clean Architecture
 This project has divided into 2 different layer
