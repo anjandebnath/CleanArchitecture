@@ -1,3 +1,10 @@
+# ACK
+So far when I want to get deep knowledge on `Dagger2` I have found lots of good tutorial.
+But what I found from there is no one actually describe much about how to cope up with MVP pattern.
+There are lots of good example on Github but I found myself confused when explore the code of individual Github projects.
+The reason is each project has some different point of view regarding Dagger2.
+So After exploring lot of projects I have finally managed to overcome my confusion and made my own way of implementing Dagger2.
+
 # Base elements(annotation) of Dagger2
 
 This [link1](https://android.jlelse.eu/dagger-2-part-i-basic-principles-graph-dependencies-scopes-3dfd032ccd82) and [link2](https://proandroiddev.com/dagger-2-part-ii-custom-scopes-component-dependencies-subcomponents-697c1fa1cfc)is best example for understanding Dagger2 
