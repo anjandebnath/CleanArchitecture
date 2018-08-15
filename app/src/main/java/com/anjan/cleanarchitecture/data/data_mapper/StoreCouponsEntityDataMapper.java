@@ -15,13 +15,14 @@ import javax.inject.Inject;
  * Created by Anjan Debnath on 8/13/2018.
  * Copyright (c) 2018, W3 Engineers Ltd. All rights reserved.
  */
-public class StoreCouponsEntityDataMapper {
+public class StoreCouponsEntityDataMapper implements EntityDataMapper{
 
     @Inject
     public StoreCouponsEntityDataMapper() {
 
     }
 
+    @Override
     public StoreCoupons transform(StoreCouponsEntity storeCouponsEntity) {
         StoreCoupons storeCoupons = null;
         List<Coupon> coupons = new ArrayList<>();
@@ -48,7 +49,7 @@ public class StoreCouponsEntityDataMapper {
         return storeCoupons;
     }
 
-
+    @Override
     public List<StoreCoupons> transform(Collection<StoreCouponsEntity> storeCouponsEntityCollection) {
         final List<StoreCoupons> couponsList = new ArrayList<>(20);
         for (StoreCouponsEntity storeCouponsEntity : storeCouponsEntityCollection) {

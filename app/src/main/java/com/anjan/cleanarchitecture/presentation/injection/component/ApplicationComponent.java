@@ -3,10 +3,12 @@ package com.anjan.cleanarchitecture.presentation.injection.component;
 import android.app.Application;
 import android.content.Context;
 
+import com.anjan.cleanarchitecture.data.data_mapper.EntityDataMapper;
 import com.anjan.cleanarchitecture.data.repository.DataRepository;
 import com.anjan.cleanarchitecture.presentation.CleanArchitectureApplication;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ApplicationContext;
 import com.anjan.cleanarchitecture.presentation.injection.modules.ApplicationModule;
+import com.anjan.cleanarchitecture.presentation.repository.data_source.StoreCouponDataSource;
 
 import javax.inject.Singleton;
 
@@ -31,6 +33,11 @@ public interface ApplicationComponent {
 
     @ApplicationContext
     Context context();
+
+    StoreCouponDataSource dataRepository();
+
+    EntityDataMapper dataMapper();
+
 
      //dependent classes that wants to communicate with modules
      void inject(CleanArchitectureApplication app);

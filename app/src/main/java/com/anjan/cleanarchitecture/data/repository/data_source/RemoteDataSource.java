@@ -5,6 +5,9 @@ import android.content.Context;
 import com.anjan.cleanarchitecture.data.entity.StoreCouponsEntity;
 import com.anjan.cleanarchitecture.data.remote_service.RemoteApi;
 import com.anjan.cleanarchitecture.data.remote_service.RemoteService;
+import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ApplicationContext;
+
+import javax.inject.Inject;
 
 import io.reactivex.Observable;
 import retrofit2.Retrofit;
@@ -17,7 +20,8 @@ public class RemoteDataSource implements DataSource {
 
     private Retrofit retrofit;
 
-    public RemoteDataSource(Context context){
+    @Inject
+    public RemoteDataSource(@ApplicationContext Context context){
         retrofit = RemoteService.getRemoteApiClient();
     }
 

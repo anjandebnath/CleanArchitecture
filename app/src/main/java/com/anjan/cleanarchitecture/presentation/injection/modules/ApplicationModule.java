@@ -3,10 +3,16 @@ package com.anjan.cleanarchitecture.presentation.injection.modules;
 import android.app.Application;
 import android.content.Context;
 
+import com.anjan.cleanarchitecture.data.data_mapper.EntityDataMapper;
+import com.anjan.cleanarchitecture.data.data_mapper.StoreCouponsEntityDataMapper;
 import com.anjan.cleanarchitecture.data.repository.DataRepository;
+import com.anjan.cleanarchitecture.data.repository.data_source.DataSource;
+import com.anjan.cleanarchitecture.data.repository.data_source.LocalDataSource;
+import com.anjan.cleanarchitecture.data.repository.data_source.RemoteDataSource;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.ApplicationContext;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.DatabaseInfo;
 import com.anjan.cleanarchitecture.presentation.injection.custom_scope.PreferenceInfo;
+import com.anjan.cleanarchitecture.presentation.repository.data_source.StoreCouponDataSource;
 import com.anjan.cleanarchitecture.presentation.utils.AppConstants;
 
 import javax.inject.Singleton;
@@ -50,6 +56,19 @@ public class ApplicationModule {
     String providePreferenceName(){
         return AppConstants.PREF_NAME;
     }
+
+    @Provides
+    @Singleton
+    StoreCouponDataSource provideDataRepository(DataRepository dataRepository){
+      return dataRepository;
+    }
+
+    @Provides
+    EntityDataMapper provideEntityDataMapper(StoreCouponsEntityDataMapper storeCouponsEntityDataMapper){
+        return storeCouponsEntityDataMapper;
+    }
+
+
 
 
 }

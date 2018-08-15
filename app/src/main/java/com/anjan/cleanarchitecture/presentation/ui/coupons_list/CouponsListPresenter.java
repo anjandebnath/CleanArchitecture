@@ -22,11 +22,12 @@ public class CouponsListPresenter extends BasePresenter<CouponsListMvpView> {
 
     private CompositeDisposable mCompositeDisposable;
 
-    @Inject
+    //@Inject
     DataRepository dataRepository;
 
     @Inject
-    public CouponsListPresenter(@ApplicationContext Context context) {
+    public CouponsListPresenter(@ApplicationContext Context context, DataRepository repository) {
+        dataRepository = repository;
         mCompositeDisposable = new CompositeDisposable();
     }
 
