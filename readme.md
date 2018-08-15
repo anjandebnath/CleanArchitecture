@@ -6,11 +6,15 @@ Base elements (annotations) of Dagger 2
 
 **@Inject** — base annotation whereby the “dependency is requested”
 
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag00.png)
+
 **@Module** — classes which methods “provide dependencies”
 
 **@Provide ** — methods inside @Module, which “tell Dagger how we want to build and present a dependency“
 
 **@Component** — bridge between @Inject and @Module
+
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag0.png)
 
 **@Scope** — enables to create global and local singletons
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_5.PNG)
