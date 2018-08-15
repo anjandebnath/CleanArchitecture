@@ -25,6 +25,9 @@ Below you can see some features of the scope annotations:
 - Usually the scope annotations are set for the Component and provide method.
 
 - **If at least one provide method has a scope annotation the Component should have the same scope annotation.**
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_3.PNG)
+
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag_4.PNG)
 
 - The Component can be unscoped only if all provide methods in all its modules are unscoped too.
 
