@@ -62,7 +62,7 @@ applied here by `@Inject` annotation on constructor.*
 ![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag13.PNG)
 
 - *Now use `Method Injection` to get the object of the injected class.*
-![]()
+![](https://github.com/anjandebnath/CleanArchitecture/blob/master/uml/Dag14.PNG)
 
 # Clean Architecture
 This project has divided into 2 different layer
